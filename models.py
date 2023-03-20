@@ -11,6 +11,7 @@ class Note(db.Model):
         db.DateTime,default=datetime.now(),onupdate=datetime.now()
     )
 
+
 class NoteSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = Note
